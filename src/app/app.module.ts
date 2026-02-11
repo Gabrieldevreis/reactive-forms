@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//Modules
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-
-//Modules
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { ComponentsModule } from './components/components.module';
-import { PipesModule } from './pipes/pipes.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +18,7 @@ import { PipesModule } from './pipes/pipes.module';
     AppRoutingModule,
     AngularMaterialModule,
     ComponentsModule,
+    HttpClientModule,
   ],
   providers: [
     provideAnimationsAsync()
